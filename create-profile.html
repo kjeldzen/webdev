@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+</head>
+
+<body>
+    
+    <header>
+        
+        <a href="index.html">
+            <img src="images/logo01.png" alt="logo-km" style="width:300px">
+        </a>
+    
+    </header>
+        
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create-profile.html">Register</a></li>
+            <li><a href="view-performance.html">My Account</a></li>
+            <li>Contact Us</li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <img src="images/img-registration-banner.jpg" alt="register-banner">
+
+        <h1>Student Information Form</h1>
+            <span>S.Y 2022-2024</span>
+
+            <h2>Please complete and submit one form per student in the KM Web Design and Development Program</h2>
+
+            <form method="post" action="view-performance.html">
+                <h3>Student's Name:</h3>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="phone"><b>Your phone number:</b></label><br><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+                    <label for="email"><b>Enter your email address:</b></label><br><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                <h3>Program Year</h3>   
+                    <label for="year">Choose a Year:</label>
+                    <select id="year" name="year">
+                        <option value="year1">Year 1</option>
+                        <option value="year1">Year 2</option>
+                    </select>
+                    
+                    <br>
+
+                    <h3>Choose and match appropriate details</h3>
+
+                    <p>Please select your favorite Web language:</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                        
+                          <br>  
+                        
+                    <p>Please select your age:</p>
+                        <input type="radio" id="age1" name="age" value="30">
+                        <label for="age1">0 - 30</label><br>
+                        <input type="radio" id="age2" name="age" value="60">
+                        <label for="age2">31 - 60</label><br>  
+                        <input type="radio" id="age3" name="age" value="100">
+                        <label for="age3">61 - 100</label>
+                      
+                        <br>
+
+                    <p>Please select your operating system:</p>
+                        <input type="radio" id="windows" name="operating_system" value="windows">
+                        <label for="windows">Windows</label><br>
+                        <input type="radio" id="macos" name="operating_system" value="macos">
+                        <label for="macos">Mac OS</label><br>
+                        <input type="radio" id="linux" name="operating_system" value="linux">
+                        <label for="linux">Linux</label>
+
+                     <h3><label for="info">Brief Description About Yourself:</label></h3>
+                        <textarea id="info" name="info" rows="4" cols="50">Write it here.</textarea>
+
+                    <h4>Review all your informations then click button to submit. We will reach out to you once we received your requirements.</h4>
+                
+                    <input type="submit" value="Submit">
+            </form> 
+
+        
+        
+    </main>
+
+
+    <footer>
+        <p>Created by KM Development. © 2022</p>
+    </footer>
+
+</body>
+</html>
